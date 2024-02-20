@@ -459,7 +459,7 @@ header {
     margin-left: 50px;
   }
   .menu ul li + li {
-    margin-left: 20px;
+    margin-left: 50px;
   }
   .menu ul li a:hover {
     color: #000;

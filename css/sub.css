@@ -1,21 +1,9 @@
 .content-sub {
   margin: 30px 0;
 }
-.sub-inner {
-  display: flex;
-  flex-wrap: wrap;
-}
-.sub-inner .inner-left{
-  width: 80%;
-  padding-right: 20px;
-  border-right: 1px solid #ccc;
-}
-.sub-inner .inner-right{
-  width: 20%;
-  padding-left: 20px;
-}
 .breadcrumb-k{
-  background: #ccc;
+  background: #ccc url(../images/bg01.jpg) no-repeat center;
+  background-size: cover;
   text-align: center;
   min-height: 300px;
   display: flex;
@@ -68,6 +56,7 @@
 }
 .box-text img {
   margin-bottom: 10px;
+  width: 80%;
 }
 .inner-left .list-social {
   justify-content: center;
@@ -79,18 +68,225 @@
   border-bottom: 1px solid #ccc;
   position: relative;
 }
-.link-tt::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 1px;
-  height: 100%;
-  background: #ccc;
-}
+
 .link-tt a {
   color: #f46f20;
   font-size: 16px;
   font-weight: 500;
+}
+/* .comment  */
+.comment {
+  padding: 30px 0;
+}
+.list-comment li {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #ccc;
+}
+.comment .title {
+  font-size: 18px;
+  color: #222;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.person {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.person .avatar {
+  width: 70px;
+  height: 70px;
+  padding-right: 15px;
+}
+.person .avatar img {
+  width: 100%;
+  border-radius: 50%;
+}
+.person .info {
+  width: calc(100% - 85px);
+}
+.person .info .txt-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+.person .info .txt-cmt {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.feedback {
+  display: none;
+}
+.person .date a,
+.feedback .txt01 a {
+  font-size: 14px;
+  color: #f46f20;
+  text-transform: uppercase;
+}
+.feedback {
+  margin-top: 20px;
+  padding: 20px;
+  background: #F2F2F2;
+}
+.feedback .txt01 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 20px;
+}
+.feedback .txt02 {
+  font-size: 14px;
+  color: #222;
+  margin-bottom: 20px;
+}
+.form-comment label {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.form-comment .box {
+  margin-bottom: 10px;
+}
+.form-comment textarea,
+.form-comment input {
+  border: 1px solid #ddd;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+  background: #fff;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #222;
+  outline: none;
+}
+.form-comment .btn-fb {
+  min-width: 100px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: #f46f20;
+  border: none;
+}
+.feedback.active {
+  display: block;
+}
+/* inner-right  */
+.inner-right {}
+.inner-right .block {
+  margin-bottom: 30px;
+}
+.headingH3Sub .ttl {
+  font-size: 15px;
+  font-weight: bold;
+  color: #444;
+  position: relative;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.headingH3Sub .ttl::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background: #ccc;
+}
+.infomation {
+  text-align: center;
+}
+.infomation img {
+  max-width: 200px;
+  display: block;
+  margin-bottom: 10px;
+}
+.infomation .txt {
+  font-size: 14px;
+  color: #444;
+}
+.list-txt-link li + li {
+  border-top: 1px solid #cccc;
+}
+.list-txt-link li a {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #f46f20;
+  padding: 10px 0;
+}
+.table {
+  width: 100%;
+  margin: 20px 0;
+}
+.table th span,
+.table td span.txt01 {
+  color: blue;
+}
+.table td span.txt02 {
+  color: #ff00ff;
+}
+.table th,
+.table td {
+  border-bottom: 1px solid #ececec;
+  color: #666;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 0.5em;
+}
+@media screen and (min-width: 1024px) {
+  .sub-inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sub-inner .inner-left{
+    width: 80%;
+    padding-right: 20px;
+    border-right: 1px solid #ccc;
+    padding: 0.5em;
+  }
+  .sub-inner .inner-right{
+    width: 20%;
+    padding-left: 20px;
+  }
+  .link-tt::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 100%;
+    background: #ccc;
+  }
+  .form-comment .box-flex .box {
+    width: calc((100% - 60px)/3);
+  }
+}
+@media screen and (max-width: 1023px) {
+  .box-text img {
+    width: 100%;
+  }
+  .breadcrumb-k {
+    padding-top: 100px;
+  }
+  .breadcrumb-k .title {
+    font-size: 20px;
+    padding: 0 20px 10px 20px;
+  }
+  .link-tt {
+    display: block;
+  }
+  .link-tt span {
+    display: block;
+  }
+  .link-tt span + span {
+    margin-top: 20px;
+  }
+  .form-comment .box-flex {
+    display: block;
+  }
 }

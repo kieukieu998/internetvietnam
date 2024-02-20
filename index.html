@@ -20,7 +20,7 @@
 <body>
   <div class="wrapper">
     <header>
-      <div class="header-top">
+      <div class="header-top is-pc">
         <div class="container-wrap">
           <ul>
             <li>
@@ -31,7 +31,7 @@
               <a href="#" target="_blank" class="btn-social">KÊNH YOUTUBE</a>
             </li>
             <li class="search">
-              <i class="fas fa-search"></i>
+              <i class="fas fa-search" id="show-search-button"></i>
               <form action="" class="form-search">
                 <div class="box-search">
                   <input type="text">
@@ -48,13 +48,24 @@
             <div class="logo">
               <a href="index.html"><img src="images/logo.jpg" alt="" class="images"></a>
             </div>
+            <div id="toggle" class="is-sp">
+              <i class="fas fa-bars"></i>
+            </div>
             <div class="menu">
-              <ul class="box-flex">
-                <li><a href="#">Trang Chủ</a></li>
-                <li><a href="#">Camera Quan Sát</a></li>
-                <li><a href="#">Trần Thạch Cao</a></li>
-                <li><a href="#">Liên Hệ</a></li>
-              </ul>
+              <nav>
+                <ul class="box-flex">
+                  <li><a href="index.html">Trang Chủ</a></li>
+                  <li><a href="index.html">Camera Quan Sát</a></li>
+                  <li><a href="index.html">Trần Thạch Cao</a></li>
+                  <li><a href="detail.html">Liên Hệ</a></li>
+                </ul>
+                <ul class="list-social is-sp">
+                  <li><a href="#" target="_blank" class="icon-fb"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#" target="_blank" class="icon-tw"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#" target="_blank" class="icon-mail"><i class="fas fa-envelope"></i></a></li>
+                  <li><a href="#" target="_blank" class="icon-pin"><i class="fab fa-pinterest"></i></a></li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
@@ -82,7 +93,7 @@
     <!-- main-visual  -->
     <div class="content">
       <div class="container-wrap">
-        <section class="section section01">
+        <section class="section section01 reveal">
           <div class="headingH2">
             <h2 class="ttl">INTERNET VIỆT NAM – ĐĂNG KÝ DỊCH VỤ FPT</h2>
             <p class="txt-lead">Quý khách chọn khu vực lắp internet Việt Nam của mình để tham khảo chương trình khuyến
@@ -173,7 +184,7 @@
           </div>
         </section>
         <!-- section01 -->
-        <section class="section section02">
+        <section class="section section02 reveal">
           <div class="wrap-inner">
             <h3 class="title01">ĐĂNG KÝ LẮP MẠNG INTERNET VIỆT NAM TRỰC TUYẾN</h3>
             <p class="txt01">PHẦN DÀNH CHO KHÁCH HÀNG ĐĂNG KÝ MỚI INTERNET VÀ TRUYỀN HÌNH FPT</p>
@@ -181,7 +192,7 @@
           </div>
         </section>
         <!-- section02  -->
-        <section class="section section03">
+        <section class="section section03 reveal">
           <div class="headingH2">
             <h2 class="ttl">PHẦN DÀNH CHO KHÁCH HÀNG INTERNET VIỆT NAM</h2>
             <p class="txt-lead">INTERNET VIỆT NAM VÀ TRUYỀN HÌNH FPT</p>
@@ -207,7 +218,7 @@
           </div>
         </section>
         <!-- section03  -->
-        <section class="section section04">
+        <section class="section section04 reveal">
           <div class="telecom">
             <h3 class="title"><strong>FPT</strong> Telecom</h3>
             <div class="slider slider02">
@@ -241,15 +252,15 @@
               <img src="images/img-diachi.jpg" alt="">
               <span>Địa chỉ</span>
             </p>
-            <a href="#">Danh sách địa chỉ văn phòng giao dịch Camera Quan Sát</a>
+            <a href="#" class="txt-link01">Danh sách địa chỉ văn phòng giao dịch Camera Quan Sát</a>
           </div>
           <div>
             <p>
               <img src="images/img-dienthoai.jpg" alt="">
               <span>Điện thoại</span>
             </p>
-            <a href="tel:0971620836">0971.620.836</a>
-            <p class="txt">7 ngày trong tuần từ 7:00 đến 22:00</p>
+            <a href="tel:0971620836" class="txt-link02">0971.620.836</a>
+            <p class="txt01">7 ngày trong tuần từ 7:00 đến 22:00</p>
           </div>
           <div>
             <p>
@@ -257,15 +268,21 @@
               <span>Địa chỉ</span>
             </p>
             <ul class="list-social">
-              <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="#" target="_blank"><i class="fas fa-envelope"></i></a></li>
-              <li><a href="#" target="_blank"><i class="fab fa-pinterest"></i></a></li>
+              <li><a href="#" target="_blank" class="icon-fb"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#" target="_blank" class="icon-tw"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#" target="_blank" class="icon-mail"><i class="fas fa-envelope"></i></a></li>
+              <li><a href="#" target="_blank" class="icon-pin"><i class="fab fa-pinterest"></i></a></li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
+    <div class="hotline-fixed">
+      <a href="tel:0971620836"><i class="fas fa-phone-alt"></i> Hotline: 0971.620.836</a>
+    </div>
+    <span class="backtotop">
+      <i class="fas fa-chevron-up"></i>
+    </span>
   </div>
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="vendor/js/fontawesome.min.js"></script>

@@ -521,7 +521,7 @@ header {
     font-size: 30px;
     cursor: pointer;
     position: absolute;
-    top: 11px;
+    top: 55px;
     right: 0;
   }
   .menu ul li a {
@@ -536,8 +536,13 @@ header {
   .header-main .box-flex {
     display: block;
   }
+  .header-top ul .search form{
+    right: -20px;
+    background: #fff;
+    z-index: 132;
+  }
   .main-visual {
-    padding: 100px 0 0 0;
+    padding: 150px 0 0 0;
   }
   header {
     position: fixed;
